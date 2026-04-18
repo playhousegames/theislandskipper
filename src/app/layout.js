@@ -1,5 +1,6 @@
 import './globals.css'
 import Link from 'next/link'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata = {
   title: 'The Island Skipper — Life Afloat from Jersey',
@@ -27,6 +28,7 @@ function AnchorLogo() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head><GoogleAnalytics /></head>
       <body>
         <div className="rope-line" />
         <nav>
