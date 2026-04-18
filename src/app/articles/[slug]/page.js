@@ -11,7 +11,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const article = getArticle(params.slug)
+  const { slug } = await params
+  const article = getArticle(slug)
   if (!article) return {}
   return {
     title: `${article.title} — The Island Skipper`,
@@ -19,8 +20,9 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default function ArticlePage({ params }) {
-  const article = getArticle(params.slug)
+export default async function ArticlePage({ params }) {
+  const { slug } = await params
+  const article = getArticle(slug)
   if (!article) notFound()
 
   const related = articles
