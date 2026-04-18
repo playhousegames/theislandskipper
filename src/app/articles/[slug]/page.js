@@ -4,6 +4,8 @@ import { articles, getArticle } from '@/lib/articles'
 import ArticleBody from '@/components/ArticleBody'
 import { notFound } from 'next/navigation'
 
+export const revalidate = 0
+
 export async function generateStaticParams() {
   return articles.map(a => ({ slug: a.id }))
 }
