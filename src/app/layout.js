@@ -90,6 +90,12 @@ export default function RootLayout({ children }) {
             <span className="affiliate-notice">This site contains affiliate links. As an Amazon Associate I earn from qualifying purchases. All opinions are my own — only gear I&apos;d actually use afloat.</span>
           </div>
         </footer>
+        <script dangerouslySetInnerHTML={{ __html: `
+  var onelink_mask = "https://www.amazon.com/";
+  var onelink_base = "https://www.amazon.co.uk/";
+  var onelink_us_tag = "jerseyreviews-20";
+` }} />
+<script src="https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=GB&adInstanceId=seoulfultea-21" async />
       </body>
     </html>
   )
