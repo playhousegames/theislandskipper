@@ -3,12 +3,16 @@ import Link from 'next/link'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata = {
+  metadataBase: new URL('https://www.theislandskipper.com'),
   title: 'The Island Skipper — Life Afloat from Jersey',
   description: 'Gear reviews, galley guides and life afloat — written by a sailor based in Jersey, Channel Islands. Honest kit guides for sailors who actually sail.',
   keywords: 'sailing gear, boat equipment, Jersey sailing, Channel Islands, boat galley, marine electronics',
   verification: {
     google: 'ZciSZHcAlpqm2yeg57UlRJ-C7ybpSRc14zFFM8LIl8E',
-  }
+  },
+  alternates: {
+    canonical: '/',
+  },
 }
 
 function AnchorLogo() {
