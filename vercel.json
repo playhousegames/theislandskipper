@@ -1,3 +1,11 @@
 {
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "theislandskipper.com" }],
+      "destination": "https://www.theislandskipper.com/$1",
+      "permanent": true
+    }
+  ]
 }
