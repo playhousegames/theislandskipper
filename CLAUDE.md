@@ -121,7 +121,7 @@ Every article should reference Jersey, Channel Islands where relevant:
 
 ```js
 // In affiliateLinks.js
-'product-key': 'https://amzn.to/XXXXXXX',
+'product-key': 'https://www.amazon.co.uk/dp/ASIN?tag=seoulfultea-21&linkCode=ll1',
 
 // In articles.js body
 { type: 'product', ..., link: link('product-key') }
@@ -130,7 +130,7 @@ Every article should reference Jersey, Channel Islands where relevant:
 ### How to get a link (Amazon Associates UK)
 1. Log into **associates.amazon.co.uk**
 2. Browse to the product on **amazon.co.uk**
-3. SiteStripe bar at top → click **Text** → copy the `amzn.to` short link
+3. SiteStripe bar at top → click **Text** → copy the full URL (format: `https://www.amazon.co.uk/dp/ASIN?tag=seoulfultea-21&linkCode=ll1`)
 4. Paste into `affiliateLinks.js`
 
 ### Amazon Associates account
