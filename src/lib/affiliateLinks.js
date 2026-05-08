@@ -9,7 +9,7 @@
  * 1. Log into Amazon Associates (associates.amazon.co.uk)
  * 2. Find the product on Amazon.co.uk
  * 3. Use the grey SiteStripe bar at the top → click "Text"
- * 4. Copy the short link (e.g. https://amzn.to/3xYzAbC)
+ * 4. Copy the full link (dp/ASIN?tag=seoulfultea-21&linkCode=ll1)
  * 5. Paste it below, replacing the placeholder #
  * 6. Save, commit, push — Vercel redeploys automatically
  *
@@ -27,53 +27,53 @@ export const LINKS = {
 
   // ── THE GALLEY ──────────────────────────────────────────
   // Article: Best 12V Espresso Makers
-  'wacaco-minipresso-gr2':      'https://amzn.to/3QNlpzp',   // ~£55  → target: https://amzn.to/YOUR_LINK
-  'wacaco-picopresso':          'https://amzn.to/4ufOUbV',   // ~£80  → target: https://amzn.to/YOUR_LINK
-  'handpresso-auto-capsule':    '#',   // ~£120 → target: https://amzn.to/YOUR_LINK
+  'wacaco-minipresso-gr2':      'https://www.amazon.co.uk/dp/B0D52XSWKB?tag=seoulfultea-21&linkCode=ll1',   // ~£55
+  'wacaco-picopresso':          'https://www.amazon.co.uk/dp/B097DCNLL6?tag=seoulfultea-21&linkCode=ll1',   // ~£80
+  'handpresso-auto-capsule':    '#',   // ~£120 → target: replace # with full amazon.co.uk URL
 
   // Article: Best Nesting Cookware
-  'sea-to-summit-cookset':      'https://amzn.to/4mFrdXV',   // ~£85  → target: https://amzn.to/YOUR_LINK
-  'optimus-terra-cookset':      'https://amzn.to/4cwGHIN',   // ~£65  → target: https://amzn.to/YOUR_LINK
-  'magma-cookware-7piece':      '#',   // ~£180 → target: https://amzn.to/YOUR_LINK
+  'sea-to-summit-cookset':      'https://www.amazon.co.uk/dp/B0CWVRGLMD?tag=seoulfultea-21&linkCode=ll1',   // ~£85
+  'optimus-terra-cookset':      'https://www.amazon.co.uk/dp/B01KJMZ4RW?tag=seoulfultea-21&linkCode=ll1',   // ~£65
+  'magma-cookware-7piece':      '#',   // ~£180 → target: replace # with full amazon.co.uk URL
 
   // Article: Sundowner Kit / Unbreakable Glasses
-  'sea-to-summit-wine-glass':   'https://amzn.to/3Ob8x5x',   // ~£18  → target: https://amzn.to/YOUR_LINK
-  'govino-wine-glass':          'https://amzn.to/4euLrBi',   // ~£12  → target: https://amzn.to/YOUR_LINK  ← DO FIRST
-  'riedel-swirl-stemless':      'https://amzn.to/4tYPkDl',   // ~£35  → target: https://amzn.to/YOUR_LINK
+  'sea-to-summit-wine-glass':   'https://www.amazon.co.uk/s?k=flexible+drinking+wine+glass+for+sailing&tag=seoulfultea-21',   // ~£18
+  'govino-wine-glass':          'https://www.amazon.co.uk/dp/B075QPYS96?tag=seoulfultea-21&linkCode=ll1',   // ~£12  ← DO FIRST
+  'riedel-swirl-stemless':      'https://www.amazon.co.uk/dp/B0009I6KSE?tag=seoulfultea-21&linkCode=ll1',   // ~£35
 
   // Article: Sailing Around Jersey
-  'stanley-vacuum-flask':       'https://amzn.to/4e0ZazT',   // ~£40  → target: https://amzn.to/YOUR_LINK
-  'plastimo-boarding-ladder':   '#',   // ~£85  → target: https://amzn.to/YOUR_LINK
+  'stanley-vacuum-flask':       'https://www.amazon.co.uk/dp/B000T21JFE?tag=seoulfultea-21&linkCode=ll1',   // ~£40
+  'plastimo-boarding-ladder':   '#',   // ~£85  → target: replace # with full amazon.co.uk URL
 
   // ── THE CABIN ───────────────────────────────────────────
   // Article: Best Boat Dehumidifiers  ← HIGH PRIORITY
-  'ecoair-dd1':                 'https://amzn.to/4temuyE',   // ~£130 → target: https://amzn.to/YOUR_LINK  ← DO FIRST
-  'unibond-aero-360':           'https://amzn.to/4mzApwG',   // ~£12  → target: https://amzn.to/YOUR_LINK  ← DO FIRST
-  'meaco-10l-dehumidifier':     'https://amzn.to/4tZ1vQw',   // ~£200 → target: https://amzn.to/YOUR_LINK
+  'ecoair-dd1':                 'https://www.amazon.co.uk/dp/B07N2VDCRJ?tag=seoulfultea-21&linkCode=ll1',   // ~£130  ← DO FIRST
+  'unibond-aero-360':           'https://www.amazon.co.uk/dp/B08JMFHLRB?tag=seoulfultea-21&linkCode=ll1',   // ~£12   ← DO FIRST
+  'meaco-10l-dehumidifier':     'https://www.amazon.co.uk/s?k=sailing+dehumidifier&tag=seoulfultea-21',     // ~£200
 
   // Article: Best LED Deck Lights
-  'osculati-led-strip':         'https://amzn.to/4tUHJp4',   // ~£35  → target: https://amzn.to/YOUR_LINK
-  'lopolight-anchor-light':     'https://amzn.to/4tUHJp4',   // ~£95  → target: https://amzn.to/YOUR_LINK
-  'lunasea-underwater-light':   'https://amzn.to/4tUHJp4',   // ~£120 → target: https://amzn.to/YOUR_LINK
+  'osculati-led-strip':         'https://www.amazon.co.uk/s?k=sailing+deck+lights&tag=seoulfultea-21',      // ~£35
+  'lopolight-anchor-light':     'https://www.amazon.co.uk/s?k=sailing+deck+lights&tag=seoulfultea-21',      // ~£95
+  'lunasea-underwater-light':   'https://www.amazon.co.uk/s?k=sailing+deck+lights&tag=seoulfultea-21',      // ~£120
 
   // Article: How to Stop Boat Smelling Damp
-  'spun-cloud-bedding':         '#',   // ~£75  → target: https://amzn.to/YOUR_LINK
+  'spun-cloud-bedding':         '#',   // ~£75  → target: replace # with full amazon.co.uk URL
 
   // ── DECK & DOCK ─────────────────────────────────────────
   // Article: Musto vs Gill vs Henri Lloyd  ← BIGGEST COMMISSIONS
-  'musto-hpx-jacket':           'https://amzn.to/4vt85QG',   // ~£595 → target: https://amzn.to/YOUR_LINK  ← ~£27/sale
-  'gill-os3-jacket':            'https://amzn.to/4sImRjZ',   // ~£320 → target: https://amzn.to/YOUR_LINK  ← ~£14/sale
-  'henri-lloyd-fremantle':      'https://amzn.to/4vt85QG',   // ~£450 → target: https://amzn.to/YOUR_LINK  ← ~£20/sale
+  'musto-hpx-jacket':           'https://www.amazon.co.uk/s?k=sailing+jackets&tag=seoulfultea-21',          // ~£595  ← ~£27/sale
+  'gill-os3-jacket':            'https://www.amazon.co.uk/dp/B0CNWH5ZCV?tag=seoulfultea-21&linkCode=ll1',   // ~£320  ← ~£14/sale
+  'henri-lloyd-fremantle':      'https://www.amazon.co.uk/s?k=sailing+jackets&tag=seoulfultea-21',          // ~£450  ← ~£20/sale
 
   // Article: Best Boat Shoes
-  'sperry-top-sider-gold-cup':  'https://amzn.to/3OqGSh2',   // ~£130 → target: https://amzn.to/YOUR_LINK
-  'sebago-docksides':           'https://amzn.to/3QNmKWX',   // ~£145 → target: https://amzn.to/YOUR_LINK
-  'musto-dynamic-pro-shoe':     'https://amzn.to/3QNmKWX',   // ~£115 → target: https://amzn.to/YOUR_LINK
+  'sperry-top-sider-gold-cup':  'https://www.amazon.co.uk/dp/B0DGZ9QZSS?tag=seoulfultea-21&linkCode=ll1',  // ~£130
+  'sebago-docksides':           'https://www.amazon.co.uk/s?k=Best+Boat+Shoes&tag=seoulfultea-21',          // ~£145
+  'musto-dynamic-pro-shoe':     'https://www.amazon.co.uk/s?k=Best+Boat+Shoes&tag=seoulfultea-21',          // ~£115
 
   // Article: Best Sailing Sunglasses
-  'gill-corona-sunglasses':     'https://amzn.to/4vSq5V0',   // ~£65  → target: https://amzn.to/YOUR_LINK
-  'oakley-holbrook-polarised':  'https://amzn.to/4vSq5V0',   // ~£140 → target: https://amzn.to/YOUR_LINK
-  'musto-sunstone-sunglasses':  'https://amzn.to/4vSq5V0',   // ~£55  → target: https://amzn.to/YOUR_LINK
+  'gill-corona-sunglasses':     'https://www.amazon.co.uk/s?k=best+sailing+sunglasses&tag=seoulfultea-21',  // ~£65
+  'oakley-holbrook-polarised':  'https://www.amazon.co.uk/s?k=best+sailing+sunglasses&tag=seoulfultea-21',  // ~£140
+  'musto-sunstone-sunglasses':  'https://www.amazon.co.uk/s?k=best+sailing+sunglasses&tag=seoulfultea-21',  // ~£55
 
 }
 

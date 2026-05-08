@@ -99,7 +99,7 @@ export default function RootLayout({ children }) {
   var onelink_base = "https://www.amazon.co.uk/";
   var onelink_us_tag = "jerseyreviews-20";
 ` }} />
-<script src="https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=GB&adInstanceId=seoulfultea-21" async />
+<script dangerouslySetInnerHTML={{ __html: `(function(){var tz=(Intl&&Intl.DateTimeFormat?Intl.DateTimeFormat().resolvedOptions().timeZone:'')||'';if(tz.indexOf('America/')!==0&&tz.indexOf('US/')!==0)return;function go(){document.querySelectorAll('a[href]').forEach(function(a){if(a.href.indexOf(onelink_base)===0)a.href=a.href.replace(onelink_base,onelink_mask).replace('tag=seoulfultea-21','tag='+onelink_us_tag);});}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',go):go();}());` }} />
       </body>
     </html>
   )
