@@ -15,9 +15,9 @@ export const articles = [
     body: [
       { type: 'p', text: 'There is a particular kind of smugness that comes from waking up anchored in a deserted cove, watching the tide come in across the flats, with a proper espresso in hand. For years, that meant a battered moka pot on a gas ring and a lot of patience. Not anymore.' },
       { type: 'p', text: 'The compact espresso maker market has matured considerably. There are now genuinely good options that produce real crema, weigh almost nothing, and won\'t fling grounds across the cabin when you hit a wake from a passing ferry. Here\'s what actually works.' },
-      { type: 'callout', title: 'The Island Skipper\'s Test Conditions', text: 'These were tested aboard a 32ft sloop moored in St. Aubin\'s Bay and at anchor in Bonne Nuit Bay on Jersey\'s north coast. Morning temperatures 8–18°C. The porthole view in that photo is genuinely what you get.' },
+      { type: 'callout', title: 'The Island Skipper\'s Test Conditions', text: 'These were tested aboard a 32ft sloop moored in St. Aubin\'s Bay and at anchor in Bonne Nuit Bay on Jersey\'s north coast. Morning temperatures 8–18°C.' },
       { type: 'h2', text: 'Our Top Picks' },
-      { type: 'product', name: 'Wacaco Minipresso GR2', verdict: 'Best overall. Compact, genuinely excellent espresso, and hand-pumped — zero draw on the battery. A revelation on a boat. The one in our photos has done three seasons and shows no signs of stopping.', price: 'Around £55', link: link('wacaco-minipresso-gr2') },
+      { type: 'product', name: 'Wacaco Minipresso GR2', verdict: 'Best overall. Compact, genuinely excellent espresso, and hand-pumped — zero draw on the battery. A revelation on a boat. Ours has done three seasons and shows no signs of stopping.', price: 'Around £55', link: link('wacaco-minipresso-gr2') },
       { type: 'product', name: 'Wacaco Picopresso', verdict: 'For the serious coffee sailor. Uses proper 58mm portafilter baskets — the same size as a real café machine. Produces outstanding espresso. Slightly bulkier but worth every millimetre.', price: 'Around £80', link: link('wacaco-picopresso') },
       { type: 'product', name: 'Handpresso Auto Capsule', verdict: 'The only one that plugs into a 12V socket. Uses Nespresso pods. Not as good as the Wacaco options but foolproof and tidy — good for less technical crew who just want to press a button.', price: 'Around £120', link: link('handpresso-auto-capsule') },
       { type: 'h2', text: 'What to Look For' },
@@ -39,10 +39,10 @@ export const articles = [
     published: '2026-06-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'If you keep a boat in Jersey, you know the damp problem. The Channel Islands sit in the Atlantic\'s flight path, the tidal range leaves boats drying out on mud twice a day, and even in summer the night air is thick with moisture. A good dehumidifier isn\'t a luxury here — it\'s basic boat maintenance.' },
-      { type: 'p', text: 'I\'ve tested six units aboard over the past two seasons. Here\'s the honest verdict — and that photo shows exactly the setup that finally worked: EcoAir running in the saloon on a grey St. Helier Marina morning.' },
+      { type: 'p', text: 'I\'ve tested six units aboard over the past two seasons. Here\'s the honest verdict.' },
       { type: 'callout', title: 'The Jersey Context', text: 'Jersey\'s tidal range reaches 12 metres at springs. When the tide drops, the air fills with moisture from exposed mud and weed. Standard household dehumidifiers often can\'t cope below 15°C — you need something rated for real marine conditions.' },
       { type: 'h2', text: 'Top Picks' },
-      { type: 'product', name: 'EcoAir DD1 Simple', verdict: 'Best all-round boat dehumidifier. Desiccant type — works effectively even in cold temperatures where compressor types struggle. Perfect for year-round use in the Channel Islands. The one in our photo.', price: 'Around £130', link: link('ecoair-dd1') },
+      { type: 'product', name: 'EcoAir DD1 Simple', verdict: 'Best all-round boat dehumidifier. Desiccant type — works effectively even in cold temperatures where compressor types struggle. Perfect for year-round use in the Channel Islands.', price: 'Around £130', link: link('ecoair-dd1') },
       { type: 'product', name: 'Unibond Aero 360° Moisture Absorber', verdict: 'Best passive option. No power needed — runs on replaceable refills. Slower but silent and works 24/7. Ideal for boats left unattended. Keep two or three aboard at all times.', price: 'Around £12 + refills', link: link('unibond-aero-360') },
       { type: 'product', name: 'Meaco 10L Low Energy Dehumidifier', verdict: 'For liveaboards with shore power. Powerful, efficient, and quiet. Overkill for a weekend sailor but brilliant if you live aboard in St. Helier Marina full time.', price: 'Around £200', link: link('meaco-10l-dehumidifier') },
       { type: 'h2', text: 'Desiccant vs Compressor' },
@@ -62,7 +62,7 @@ export const articles = [
     published: '2026-05-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'Every serious sailor eventually faces this decision. The three dominant British sailing clothing brands each make offshore-rated foul weather jackets in the £300–600 range. They all look good on a chandlery hanger. But how do they actually perform when you\'re on the helm at 0200, spray flying, with the French coast somewhere to port?' },
-      { type: 'p', text: 'I wore each jacket for a full season passage — St. Helier to Cherbourg, the Race of Alderney, overnight to Dartmouth — before writing this. That photo is the Musto HPX on the backstay as we came into St. Peter Port. It was raining.' },
+      { type: 'p', text: 'I wore each jacket for a full season passage — St. Helier to Cherbourg, the Race of Alderney, overnight to Dartmouth — before writing this.' },
       { type: 'callout', title: 'Test Conditions', text: 'Channel Islands passages, May–September 2025. Conditions ranged from flat calm to Force 7 gusts on the Race of Alderney. All jackets tested at the helm and below, wet and dry, day and night.' },
       { type: 'h2', text: 'The Verdict' },
       { type: 'product', name: 'Musto HPX Gore-Tex Jacket', verdict: 'Best waterproofing. After four hours on the helm in breaking seas, the inside was bone dry. Gore-Tex Pro fabric, properly taped seams. The gold standard — and priced accordingly.', price: '£595', link: link('musto-hpx-jacket') },
@@ -84,7 +84,7 @@ export const articles = [
     date: 'May 2026',
     published: '2026-05-01',   // ISO date — used by sitemap + structured data
     body: [
-      { type: 'p', text: 'A boat galley is roughly the size of a broom cupboard, and you\'re expected to cook three meals a day in it, sometimes while the boat is heeled at 20 degrees. The photo above is our actual galley — that gimballed stove and the spice rack above it are aboard a 32ft sloop in St. Helier Marina. This isn\'t a studio set.' },
+      { type: 'p', text: 'A boat galley is roughly the size of a broom cupboard, and you\'re expected to cook three meals a day in it, sometimes while the boat is heeled at 20 degrees.' },
       { type: 'callout', title: 'Galley Reality', text: 'Most of the cooking on a Channel Islands passage happens in a seaway. Gimballed stoves help, but you still need pans that sit stably, heat evenly, and are light enough to handle one-handed when you need to grab a shroud.' },
       { type: 'h2', text: 'Top Picks' },
       { type: 'product', name: 'Sea to Summit Detour Stainless Steel Cookset', verdict: 'Best overall. Lightweight stainless, foldable handles, compact nest. Used this for three seasons — tough, easy to clean, and the lids double as plates. Perfect for two to four people aboard.', price: 'Around £85', link: link('sea-to-summit-cookset') },
@@ -101,16 +101,16 @@ export const articles = [
     silo: 'cabin',
     siloLabel: 'The Cabin',
     image: '/images/led-deck-lights.jpg',
-    excerpt: 'The right deck lighting transforms a boat at anchor. Our picks for every budget — including the ones that made that photograph possible.',
+    excerpt: 'The right deck lighting transforms a boat at anchor. Our picks for every budget, from ambient cockpit strips to the indulgence buys.',
     readTime: '6 min read',
     date: 'April 2026',
     published: '2026-04-01',   // ISO date — used by sitemap + structured data
     body: [
-      { type: 'p', text: 'That photograph is not staged. That\'s a real evening anchored in St. Aubin\'s Bay, with St. Helier\'s lights on the horizon and a bottle of something cold on the table. The warm amber glow from under the cockpit coaming is an Osculati LED strip on a dimmer. This is what the right lighting does to a boat.' },
+      { type: 'p', text: 'Picture an evening anchored in St. Aubin\'s Bay, St. Helier\'s lights on the horizon, a bottle of something cold on the table, and a warm amber glow from under the cockpit coaming. That glow is a dimmable LED strip, and it\'s what the right lighting does to a boat.' },
       { type: 'p', text: 'Good deck lighting does two things: makes the cockpit usable after dark without destroying your night vision, and makes the boat look beautiful at anchor. The key is warm white LEDs on a dimmer. Cool white makes a boat look like a hospital ward.' },
       { type: 'callout', title: 'St. Aubin\'s Bay at Anchor', text: 'Anchoring off St. Aubin\'s on a summer evening, with Elizabeth Castle lit up to the east — this is when good deck lighting earns its keep. These are the products that have made those evenings genuinely special.' },
       { type: 'h2', text: 'Top Picks' },
-      { type: 'product', name: 'Osculati LED Strip Light with Dimmer', verdict: 'Best overall. Waterproof, warm 3000K white, dimmable, minimal current draw. Mount under the cockpit coaming for the perfect ambient glow. The one in our photos.', price: 'Around £35', link: link('osculati-led-strip') },
+      { type: 'product', name: 'Osculati LED Strip Light with Dimmer', verdict: 'Best overall. Waterproof, warm 3000K white, dimmable, minimal current draw. Mount under the cockpit coaming for the perfect ambient glow.', price: 'Around £35', link: link('osculati-led-strip') },
       { type: 'product', name: 'Lopolight 360° Anchor Light', verdict: 'The best anchor light on the market. Visible at range, tiny current draw, and clean Scandinavian design. A proper upgrade from a standard masthead fitting.', price: 'Around £95', link: link('lopolight-anchor-light') },
       { type: 'product', name: 'Lunasea Submersible Underwater Light', verdict: 'The indulgence pick. Fit one below the waterline and the whole anchorage glows blue-green. Purely aesthetic but genuinely magical on a still summer night.', price: 'Around £120', link: link('lunasea-underwater-light') },
     ]
@@ -127,7 +127,7 @@ export const articles = [
     date: 'April 2026',
     published: '2026-04-01',   // ISO date — used by sitemap + structured data
     body: [
-      { type: 'p', text: 'That photo was taken at Gorey Harbour with Mont Orgueil Castle in the background — and those shoes are sitting on wet, weedy granite at low tide. That\'s the real test. Any shoe that grips that surface grips everywhere.' },
+      { type: 'p', text: 'The real test for a deck shoe is wet, weedy granite at low tide, the kind you find on the slipways at Gorey Harbour under Mont Orgueil. Any shoe that grips that surface grips everywhere.' },
       { type: 'callout', title: 'The Jersey Test', text: 'Grève de Lecq slipway at low tide is perhaps the most treacherous surface in the Channel Islands — wet, weedy granite at a steep angle. That\'s where these were tested. If they pass there, they pass everywhere.' },
       { type: 'h2', text: 'Top Picks' },
       { type: 'product', name: 'Sperry Top-Sider Gold Cup', verdict: 'The classic, still the best. Wave-siping on the outsole grips wet decks brilliantly, the leather upper is properly water-resistant, and they look right in any marina in the world.', price: 'Around £130', link: link('sperry-top-sider-gold-cup') },
@@ -144,16 +144,16 @@ export const articles = [
     silo: 'galley',
     siloLabel: 'The Galley',
     image: '/images/unbreakable-glasses.jpg',
-    excerpt: 'That photograph — two glasses, golden hour, Elizabeth Castle in the distance — is what good kit makes possible. Here\'s everything you need for the perfect sundowner at anchor.',
+    excerpt: 'Two glasses, golden hour, Elizabeth Castle across the bay. Here\'s everything you need for the perfect sundowner at anchor.',
     readTime: '6 min read',
     date: 'March 2026',
     published: '2026-03-01',   // ISO date — used by sitemap + structured data
     body: [
-      { type: 'p', text: 'That stern plate reads "The Island Skipper — Jersey" and those are two glasses of something cold with the sun going down behind Elizabeth Castle. This is the point of all of it. The right glass makes a difference — not for snobbish reasons, but because a proper wine glass shape affects how the wine tastes and how the evening feels.' },
+      { type: 'p', text: 'Two glasses of something cold, Elizabeth Castle across the bay, the sun going down. This is the point of all of it. The right glass makes a difference — not for snobbish reasons, but because a proper wine glass shape affects how the wine tastes and how the evening feels.' },
       { type: 'p', text: 'The catch is that real glass on a boat is a hazard and a liability. The solution is polycarbonate — but not all polycarbonate glasses are equal. The bad ones look like picnic glasses. The good ones are indistinguishable from crystal at arm\'s length.' },
-      { type: 'callout', title: 'That Photo', text: 'The glasses in the photograph are Sea to Summit Delta Wine Glasses. The stern nameplate is hand-engraved brass. Elizabeth Castle is visible over the port quarter as the sun sets behind it.' },
+      { type: 'callout', title: 'Sundowners Off St. Aubin\'s', text: 'A settled summer evening anchored off St. Aubin\'s, with Elizabeth Castle across the bay, is about as good as a sundowner gets. Check the tide before you settle in: at springs the bay dries a long way out.' },
       { type: 'h2', text: 'The Glasses' },
-      { type: 'product', name: 'Sea to Summit Delta Wine Glass', verdict: 'Best overall. Genuinely attractive polycarbonate that doesn\'t look like a camping cup. Stackable, dishwasher safe, and virtually indestructible. These are the ones in our photos.', price: 'Around £18 each', link: link('sea-to-summit-wine-glass') },
+      { type: 'product', name: 'Sea to Summit Delta Wine Glass', verdict: 'Best overall. Genuinely attractive polycarbonate that doesn\'t look like a camping cup. Stackable, dishwasher safe, and virtually indestructible.', price: 'Around £18 each', link: link('sea-to-summit-wine-glass') },
       { type: 'product', name: 'Govino Flexible Wine Glass', verdict: 'Best for rougher conditions. Flexible polycarbonate that won\'t crack if dropped on fibreglass. The go-to for passages and whenever things get lively.', price: 'Around £12 for 4', link: link('govino-wine-glass') },
       { type: 'product', name: 'Riedel Swirl Stemless', verdict: 'The indulgence pick — actual glass, but specifically engineered to be harder to knock over. For calm anchorages only. Worth the risk for a special evening.', price: 'Around £35 for 2', link: link('riedel-swirl-stemless') },
       { type: 'h2', text: 'Complete Sundowner Kit' },
