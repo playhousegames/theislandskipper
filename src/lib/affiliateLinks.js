@@ -59,6 +59,10 @@ export const LINKS = {
   // Article: How to Stop Boat Smelling Damp
   'spun-cloud-bedding':         '#',   // ~£75  → target: replace # with full amazon.co.uk URL
 
+  // Article: How to Winterise a Boat
+  'ctek-mxs-5':                 'https://www.amazon.co.uk/s?k=CTEK+MXS+5.0&tag=seoulfultea-21',             // ~£75  → swap for /dp/ SiteStripe link
+  'breathable-boat-cover':      'https://www.amazon.co.uk/s?k=breathable+boat+cover&tag=seoulfultea-21',    // ~£60–150 → swap for a specific /dp/ link
+
   // ── DECK & DOCK ─────────────────────────────────────────
   // Article: Musto vs Gill vs Henri Lloyd  ← BIGGEST COMMISSIONS
   'musto-hpx-jacket':           'https://www.amazon.co.uk/s?k=sailing+jackets&tag=seoulfultea-21',          // ~£595  ← ~£27/sale
