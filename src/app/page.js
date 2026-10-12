@@ -53,7 +53,7 @@ export default function HomePage() {
         </svg>
         <div className="hero-tag">Est. Jersey, Channel Islands</div>
         <h1>Gear, Grub &amp; <em>Life Afloat</em><br/>from the Channel Islands</h1>
-        <p>Honest kit reviews, galley guides, and cabin comforts — written by a sailor who actually lives with this stuff, anchored off St. Aubin&apos;s Bay.</p>
+        <p>Honest, researched gear guides for galley, cabin and deck — written from Jersey, where the tides decide everything.</p>
         <div className="hero-waves">
           <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{width:'100%',height:'100%'}}>
             <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#f5f0e4"/>
@@ -118,13 +118,13 @@ export default function HomePage() {
           <Link href="/articles/best-boat-dehumidifiers-jersey" className="kit-card">
             <div className="kit-number">01</div>
             <h3>The &ldquo;No-Soggy-Bed&rdquo; Kit</h3>
-            <p>Dehumidifier, moisture-wicking sheets &amp; damp traps. Essential in Jersey&apos;s damp Atlantic climate.</p>
+            <p>Dehumidifier, moisture absorbers &amp; better airflow. Essential in Jersey&apos;s damp Atlantic climate.</p>
             <span className="kit-link">View the kit →</span>
           </Link>
           <Link href="/articles/best-12v-espresso-makers-boats" className="kit-card">
             <div className="kit-number">02</div>
             <h3>The &ldquo;Perfect Morning at Anchor&rdquo; Kit</h3>
-            <p>Compact espresso maker, insulated mugs &amp; nesting pans. Sunrise over St. Aubin&apos;s Bay, sorted.</p>
+            <p>Compact espresso maker, a proper flask &amp; nesting pans. Sunrise over St. Aubin&apos;s Bay, sorted.</p>
             <span className="kit-link">View the kit →</span>
           </Link>
           <Link href="/articles/best-unbreakable-wine-glasses-boats" className="kit-card">
@@ -136,7 +136,7 @@ export default function HomePage() {
           <Link href="/articles/sailing-around-jersey-gear-guide" className="kit-card">
             <div className="kit-number">04</div>
             <h3>The &ldquo;Dried-Out&rdquo; Kit</h3>
-            <p>Beach-landing gear, non-slip shoes &amp; boarding ladder. Built for Jersey&apos;s 12m tidal range.</p>
+            <p>Boarding ladder, grippy deck shoes &amp; tide-ready kit list. Built for Jersey&apos;s 12m tidal range.</p>
             <span className="kit-link">View the kit →</span>
           </Link>
         </div>
@@ -145,8 +145,8 @@ export default function HomePage() {
         <div className="jersey-banner">
           <div>
             <span style={{fontSize:'0.68rem',letterSpacing:'0.18em',textTransform:'uppercase',color:'var(--rope)',display:'block',marginBottom:'0.5rem'}}>Written from 49°N</span>
-            <h2>Gear reviewed where the tides actually matter</h2>
-            <p>Jersey has one of the world&apos;s largest tidal ranges — up to 12 metres. Every kit review on this site is informed by real passages: St. Aubin&apos;s to Sark, drying out on Grève de Lecq, running the Race of Alderney. This isn&apos;t a content farm. It&apos;s a ship&apos;s log.</p>
+            <h2>Gear chosen for where the tides actually matter</h2>
+            <p>Jersey has one of the world&apos;s largest tidal ranges — up to 12 metres. Every guide on this site is written with that in mind: drying harbours, strong tidal streams, the Race of Alderney and damp Atlantic winters. Researched properly, honest about what&apos;s been used first-hand, and written by a local sailor.</p>
           </div>
           <div className="jersey-stats">
             <div className="stat">
@@ -162,8 +162,8 @@ export default function HomePage() {
               <span className="stat-label">Island routes</span>
             </div>
             <div className="stat">
-              <span className="stat-val">Real</span>
-              <span className="stat-label">On-water kit</span>
+              <span className="stat-val">Local</span>
+              <span className="stat-label">Jersey knowledge</span>
             </div>
           </div>
         </div>

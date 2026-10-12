@@ -244,14 +244,17 @@ export default async function ArticlePage({ params }) {
 ## Content Guidelines
 
 ### Voice & Tone
-- First person ("I tested this aboard...", "In my experience...")
-- Jersey-specific references wherever natural
-- Honest — acknowledge when something hasn't been personally tested
+- Written by Matthew: a Jersey sailor working through RYA qualifications (Level 1 done). Not a veteran offshore skipper — never imply otherwise.
+- Default is RESEARCHED recommendation: specs, owner reviews, what local sailors use. Show the reasoning ("Desiccant, so it keeps working in a cold cabin").
+- Only write first-hand claims ("I've used…", "tested aboard…") for gear Matthew has genuinely used. No invented passages, boats, seasons, test counts or conditions.
+- Images are AI-generated illustrations. Never caption them as real photos ("that photo is…", "not staged", "the one in our photos").
+- Jersey-specific references wherever natural — local knowledge is real and is the differentiator.
 - Never review safety gear (lifejackets, harnesses, EPIRBs, flares) — editorial policy
+- Opportunity: Matthew's own RYA progression (Level 2, Day Skipper, first charter) = genuine first-hand content
 
 ### Article Structure
 Every article should include:
-1. Opening personal anecdote or scene-setting
+1. Opening scene-setting or the problem the gear solves
 2. Jersey/Channel Islands callout box (`type: 'callout'`)
 3. 2–3 product recommendations with affiliate links
 4. Honest verdict

@@ -91,6 +91,7 @@ export default async function ArticlePage({ params }) {
         <p className="article-subtitle">{article.subtitle}</p>
         <div className="article-meta">
           <span>{article.date}</span>
+          {article.updated && <span>Updated {new Date(article.updated).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}</span>}
           <span>{article.readTime}</span>
           <span>TheIslandSkipper.com</span>
         </div>

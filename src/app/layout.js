@@ -99,7 +99,7 @@ export default function RootLayout({ children }) {
           </div>
           <div className="footer-bottom">
             <span>© 2026 TheIslandSkipper.com · Jersey, Channel Islands</span>
-            <span className="affiliate-notice">This site contains affiliate links. As an Amazon Associate I earn from qualifying purchases. All opinions are my own — only gear I&apos;d actually use afloat.</span>
+            <span className="affiliate-notice">This site contains affiliate links. As an Amazon Associate I earn from qualifying purchases. All opinions are my own.</span>
           </div>
         </footer>
         {/* US visitors: rewrite Amazon UK *search* links to amazon.com with the US tag.
