@@ -43,7 +43,9 @@ src/
   components/
     ArticleBody.js             ← Renders article body blocks
     CategoryPage.js            ← Shared category page template
-    GoogleAnalytics.js         ← GA4 script injection
+    GoogleAnalytics.js         ← GA4 + cookie consent banner (GA loads only after Accept)
+    MobileNav.js               ← Hamburger menu shown under 768px
+  lib/site.js                  ← SITE_URL, SITE_NAME, STATIC_PAGES_UPDATED
 public/
   images/                      ← Photography assets (7 images)
     espresso.jpg
@@ -74,7 +76,7 @@ public/
 
 ### The Jersey Angle
 Every article should reference Jersey, Channel Islands where relevant:
-- 12m tidal range (second largest in the world)
+- 12m tidal range (one of the largest in the world — NOT "second largest"; Fundy, the Severn and the Bay of Mont-Saint-Michel are all higher)
 - Specific locations: St. Aubin's Bay, Grève de Lecq, Gorey Harbour, Mont Orgueil, Elizabeth Castle, St. Catherine's Bay
 - Passages: St. Helier → Cherbourg, St. Helier → Sark, Race of Alderney
 - Local community: Royal Channel Islands Yacht Club (RCIYC)
@@ -98,6 +100,8 @@ Every article should reference Jersey, Channel Islands where relevant:
   excerpt: 'Short description for cards and meta tags.',
   readTime: '8 min read',
   date: 'Month Year',
+  published: 'YYYY-MM-DD',          // ISO date — sitemap lastModified + Article schema
+  // updated: 'YYYY-MM-DD',         // optional — set when you materially revise an article
   body: [
     { type: 'p', text: 'Paragraph text.' },
     { type: 'h2', text: 'Section heading' },
@@ -212,15 +216,26 @@ export default async function ArticlePage({ params }) {
 ```
 
 ### Article routing
-- `revalidate = 0` is set on the article page to prevent Vercel ISR cache serving stale 404s
-- `trailingSlash` was removed from `next.config.js` to fix article routing on Vercel
+- Articles are statically generated: `generateStaticParams` + `dynamicParams = false` (unknown slugs return a real 404). The old `revalidate = 0` was removed.
+- `trailingSlash` is off. Sitemap URLs must therefore have NO trailing slash.
+
+### Canonicals (fixed Oct 2026)
+- Never put `alternates.canonical` in `layout.js` — every page inherits it. It previously pointed every page at the homepage.
+- Each page sets its own: `alternates: { canonical: '/path' }`. Articles set theirs in `generateMetadata`.
+
+### Affiliate buttons
+- `ArticleBody` only renders "Check price on Amazon" when the link starts with `http` — `'#'` placeholders show the product without a button.
+- Affiliate links use `rel="sponsored noopener noreferrer"`.
+- US visitors: only Amazon *search* links are rewritten to amazon.com (UK product ASINs often 404 on .com).
 
 ---
 
 ## SEO Notes
 - Sitemap auto-generates at `/sitemap.xml` via `src/app/sitemap.js`
 - Google Search Console verified April 18 2026, 14 pages indexed
-- Each article has `generateMetadata` for title and description
+- Each article has `generateMetadata` for title, description, canonical, Open Graph and Twitter cards
+- Articles output `Article` + `BreadcrumbList` JSON-LD
+- Sitemap lastModified comes from each article's `published`/`updated`; static pages use `STATIC_PAGES_UPDATED` in `src/lib/site.js`
 - Jersey-specific content is the main SEO differentiator — no competitor can replicate local knowledge
 - Target keywords: "best boat dehumidifier", "12v espresso maker boats", "musto vs gill jacket", "boat shoes sailing", "sailing around Jersey"
 
@@ -243,12 +258,12 @@ Every article should include:
 5. Cross-reference to related starter kit
 
 ### Affiliate Disclosure
-Already in footer on every page — do not remove:
+Shown automatically under the meta bar on any article with product boxes, AND in the footer on every page — do not remove either:
 *"This site contains affiliate links. As an Amazon Associate I earn from qualifying purchases."*
 
 ---
 
 ## Analytics & Tracking
 - **GA4 Measurement ID:** G-ZTT5MPJKPM
-- Tracking script in `src/components/GoogleAnalytics.js`, injected via `layout.js`
-- Tracks all page views automatically across all routes
+- `src/components/GoogleAnalytics.js` shows a consent banner; GA4 loads only after the visitor clicks Accept (choice stored in localStorage `ts-analytics-consent`)
+- Expect GA numbers to drop vs. before — that's consented traffic only

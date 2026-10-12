@@ -1,17 +1,30 @@
 import './globals.css'
 import Link from 'next/link'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import MobileNav from '@/components/MobileNav'
+import { SITE_URL, SITE_NAME } from '@/lib/site'
+
+const NAV_LINKS = [
+  { href: '/galley', label: 'The Galley' },
+  { href: '/cabin', label: 'The Cabin' },
+  { href: '/deck', label: 'Deck & Dock' },
+  { href: '/#kits', label: 'Starter Kits' },
+  { href: '/about', label: 'About' },
+]
 
 export const metadata = {
-  metadataBase: new URL('https://www.theislandskipper.com'),
+  metadataBase: new URL(SITE_URL),
   title: 'The Island Skipper — Life Afloat from Jersey',
   description: 'Gear reviews, galley guides and life afloat — written by a sailor based in Jersey, Channel Islands. Honest kit guides for sailors who actually sail.',
-  keywords: 'sailing gear, boat equipment, Jersey sailing, Channel Islands, boat galley, marine electronics',
   verification: {
     google: 'ZciSZHcAlpqm2yeg57UlRJ-C7ybpSRc14zFFM8LIl8E',
   },
-  alternates: {
-    canonical: '/',
+  // No site-wide canonical here: each page sets its own via `alternates`.
+  // (A canonical in the root layout is inherited by every page and points them all at the homepage.)
+  openGraph: {
+    siteName: SITE_NAME,
+    locale: 'en_GB',
+    type: 'website',
   },
 }
 
@@ -35,7 +48,6 @@ function AnchorLogo() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <head><GoogleAnalytics /></head>
       <body>
         <div className="rope-line" />
         <nav>
@@ -47,12 +59,9 @@ export default function RootLayout({ children }) {
             </div>
           </Link>
           <ul className="nav-links">
-            <li><Link href="/galley">The Galley</Link></li>
-            <li><Link href="/cabin">The Cabin</Link></li>
-            <li><Link href="/deck">Deck &amp; Dock</Link></li>
-            <li><Link href="/#kits">Starter Kits</Link></li>
-            <li><Link href="/about">About</Link></li>
+            {NAV_LINKS.map(l => <li key={l.href}><Link href={l.href}>{l.label}</Link></li>)}
           </ul>
+          <MobileNav links={NAV_LINKS} />
         </nav>
 
         <main>{children}</main>
@@ -85,7 +94,6 @@ export default function RootLayout({ children }) {
               <ul>
                 <li><Link href="/about">About the Skipper</Link></li>
                 <li><Link href="/articles/sailing-around-jersey-gear-guide">Sailing Jersey</Link></li>
-                <li><Link href="/galley">Island Routes</Link></li>
               </ul>
             </div>
           </div>
@@ -94,12 +102,10 @@ export default function RootLayout({ children }) {
             <span className="affiliate-notice">This site contains affiliate links. As an Amazon Associate I earn from qualifying purchases. All opinions are my own — only gear I&apos;d actually use afloat.</span>
           </div>
         </footer>
-        <script dangerouslySetInnerHTML={{ __html: `
-  var onelink_mask = "https://www.amazon.com/";
-  var onelink_base = "https://www.amazon.co.uk/";
-  var onelink_us_tag = "jerseyreviews-20";
-` }} />
-<script dangerouslySetInnerHTML={{ __html: `(function(){var tz=(Intl&&Intl.DateTimeFormat?Intl.DateTimeFormat().resolvedOptions().timeZone:'')||'';if(tz.indexOf('America/')!==0&&tz.indexOf('US/')!==0)return;function go(){document.querySelectorAll('a[href]').forEach(function(a){if(a.href.indexOf(onelink_base)===0)a.href=a.href.replace(onelink_base,onelink_mask).replace('tag=seoulfultea-21','tag='+onelink_us_tag);});}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',go):go();}());` }} />
+        {/* US visitors: rewrite Amazon UK *search* links to amazon.com with the US tag.
+            Product (/dp/) links are left alone — UK ASINs often 404 on amazon.com. */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}if(tz.indexOf('America/')!==0&&tz.indexOf('US/')!==0)return;function go(){document.querySelectorAll('a[href^="https://www.amazon.co.uk/s?"]').forEach(function(a){a.href=a.href.replace('https://www.amazon.co.uk/','https://www.amazon.com/').replace('tag=seoulfultea-21','tag=jerseyreviews-20');});}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',go):go();}());` }} />
+        <GoogleAnalytics />
       </body>
     </html>
   )

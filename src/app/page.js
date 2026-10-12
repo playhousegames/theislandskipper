@@ -2,6 +2,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { articles } from '@/lib/articles'
 
+export const metadata = {
+  alternates: { canonical: '/' },
+}
+
 function GalleyIcon() {
   return (
     <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
@@ -88,7 +92,7 @@ export default function HomePage() {
           {articles.map(a => (
             <Link key={a.id} href={`/articles/${a.id}`} className="article-card">
               <div className="card-image">
-                <Image src={a.image} alt={a.title} width={640} height={200} style={{objectFit:'cover',width:'100%',height:'100%'}} />
+                <Image src={a.image} alt={a.title} width={640} height={400} sizes="(max-width: 768px) 100vw, 400px" style={{objectFit:'cover',width:'100%',height:'100%'}} />
                 <span className={`card-silo-tag tag-${a.silo}`}>{a.siloLabel}</span>
               </div>
               <div className="card-body">

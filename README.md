@@ -41,7 +41,9 @@ src/
     articles/
       [slug]/page.js ← Dynamic article pages
   lib/
-    articles.js      ← All 9 articles + data
+    articles.js      ← All articles + data
+    affiliateLinks.js ← All affiliate URLs
+    site.js          ← Site URL + constants
   components/
     ArticleBody.js   ← Article renderer
     CategoryPage.js  ← Category page template
@@ -56,7 +58,7 @@ public/
 4. Commit and push — Vercel auto-deploys
 
 ## Adding Real Amazon Affiliate Links
-In `src/lib/articles.js`, replace each product's `link: '#'` with your actual Amazon affiliate URL.
+Edit `src/lib/affiliateLinks.js` only. Products whose link is still `'#'` render without a buy button. See CLAUDE.md for details.
 
 ## Local Development
 ```bash
@@ -66,7 +68,7 @@ npm run dev
 Visit http://localhost:3000
 
 ## Tech Stack
-- Next.js 14 (App Router, static export)
+- Next.js 16 (App Router, statically generated)
 - Deployed on Vercel
 - No database — all content in `articles.js`
 - Images served from `public/images/`

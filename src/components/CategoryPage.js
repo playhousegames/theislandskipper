@@ -21,7 +21,7 @@ export default function CategoryPage({ silo, title, subtitle, description }) {
           {siloArticles.map(a => (
             <Link key={a.id} href={`/articles/${a.id}`} className="article-card">
               <div className="card-image">
-                <Image src={a.image} alt={a.title} width={640} height={200} style={{objectFit:'cover',width:'100%',height:'100%'}}/>
+                <Image src={a.image} alt={a.title} width={640} height={400} sizes="(max-width: 768px) 100vw, 400px" style={{objectFit:'cover',width:'100%',height:'100%'}}/>
                 <span className={`card-silo-tag tag-${a.silo}`}>{a.siloLabel}</span>
               </div>
               <div className="card-body">

@@ -1,4 +1,4 @@
-export const metadata = { title: 'About — The Island Skipper', description: 'About The Island Skipper — a sailing gear review site written from Jersey, Channel Islands.' }
+export const metadata = { title: 'About — The Island Skipper', description: 'About The Island Skipper — a sailing gear review site written from Jersey, Channel Islands.', alternates: { canonical: '/about' } }
 export default function AboutPage() {
   return (
     <div className="article-wrapper">

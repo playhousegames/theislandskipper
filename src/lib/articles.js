@@ -11,6 +11,7 @@ export const articles = [
     excerpt: 'A proper coffee at anchor is one of sailing\'s great pleasures. We\'ve rounded up the best compact espresso makers that actually work in a boat galley — no 12V required.',
     readTime: '8 min read',
     date: 'June 2026',
+    published: '2026-06-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'There is a particular kind of smugness that comes from waking up anchored in a deserted cove, watching the tide come in across the flats, with a proper espresso in hand. For years, that meant a battered moka pot on a gas ring and a lot of patience. Not anymore.' },
       { type: 'p', text: 'The compact espresso maker market has matured considerably. There are now genuinely good options that produce real crema, weigh almost nothing, and won\'t fling grounds across the cabin when you hit a wake from a passing ferry. Here\'s what actually works.' },
@@ -35,6 +36,7 @@ export const articles = [
     excerpt: 'Living aboard in the Channel Islands means fighting damp year-round. After testing six dehumidifiers in actual Jersey conditions — damp winters, misty mornings, 12m tidal swings — here\'s what genuinely works.',
     readTime: '10 min read',
     date: 'June 2026',
+    published: '2026-06-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'If you keep a boat in Jersey, you know the damp problem. The Channel Islands sit in the Atlantic\'s flight path, the tidal range leaves boats drying out on mud twice a day, and even in summer the night air is thick with moisture. A good dehumidifier isn\'t a luxury here — it\'s basic boat maintenance.' },
       { type: 'p', text: 'I\'ve tested six units aboard over the past two seasons. Here\'s the honest verdict — and that photo shows exactly the setup that finally worked: EcoAir running in the saloon on a grey St. Helier Marina morning.' },
@@ -57,6 +59,7 @@ export const articles = [
     excerpt: 'Three iconic British sailing brands, three offshore jackets tested in Channel Islands conditions. One clear winner — and one surprise from the mid-price range.',
     readTime: '12 min read',
     date: 'May 2026',
+    published: '2026-05-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'Every serious sailor eventually faces this decision. The three dominant British sailing clothing brands each make offshore-rated foul weather jackets in the £300–600 range. They all look good on a chandlery hanger. But how do they actually perform when you\'re on the helm at 0200, spray flying, with the French coast somewhere to port?' },
       { type: 'p', text: 'I wore each jacket for a full season passage — St. Helier to Cherbourg, the Race of Alderney, overnight to Dartmouth — before writing this. That photo is the Musto HPX on the backstay as we came into St. Peter Port. It was raining.' },
@@ -79,6 +82,7 @@ export const articles = [
     excerpt: 'Space is everything in a boat galley. The best nesting pan sets that actually cook well, store flat, and survive salt air — tested in a real Channel Islands galley.',
     readTime: '7 min read',
     date: 'May 2026',
+    published: '2026-05-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'A boat galley is roughly the size of a broom cupboard, and you\'re expected to cook three meals a day in it, sometimes while the boat is heeled at 20 degrees. The photo above is our actual galley — that gimballed stove and the spice rack above it are aboard a 32ft sloop in St. Helier Marina. This isn\'t a studio set.' },
       { type: 'callout', title: 'Galley Reality', text: 'Most of the cooking on a Channel Islands passage happens in a seaway. Gimballed stoves help, but you still need pans that sit stably, heat evenly, and are light enough to handle one-handed when you need to grab a shroud.' },
@@ -100,6 +104,7 @@ export const articles = [
     excerpt: 'The right deck lighting transforms a boat at anchor. Our picks for every budget — including the ones that made that photograph possible.',
     readTime: '6 min read',
     date: 'April 2026',
+    published: '2026-04-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'That photograph is not staged. That\'s a real evening anchored in St. Aubin\'s Bay, with St. Helier\'s lights on the horizon and a bottle of something cold on the table. The warm amber glow from under the cockpit coaming is an Osculati LED strip on a dimmer. This is what the right lighting does to a boat.' },
       { type: 'p', text: 'Good deck lighting does two things: makes the cockpit usable after dark without destroying your night vision, and makes the boat look beautiful at anchor. The key is warm white LEDs on a dimmer. Cool white makes a boat look like a hospital ward.' },
@@ -120,6 +125,7 @@ export const articles = [
     excerpt: 'A good pair of deck shoes needs to grip wet fibreglass, look decent in a marina restaurant, and last more than one season. Tested on Jersey\'s notoriously slippery slipways.',
     readTime: '8 min read',
     date: 'April 2026',
+    published: '2026-04-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'That photo was taken at Gorey Harbour with Mont Orgueil Castle in the background — and those shoes are sitting on wet, weedy granite at low tide. That\'s the real test. Any shoe that grips that surface grips everywhere.' },
       { type: 'callout', title: 'The Jersey Test', text: 'Grève de Lecq slipway at low tide is perhaps the most treacherous surface in the Channel Islands — wet, weedy granite at a steep angle. That\'s where these were tested. If they pass there, they pass everywhere.' },
@@ -141,6 +147,7 @@ export const articles = [
     excerpt: 'That photograph — two glasses, golden hour, Elizabeth Castle in the distance — is what good kit makes possible. Here\'s everything you need for the perfect sundowner at anchor.',
     readTime: '6 min read',
     date: 'March 2026',
+    published: '2026-03-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'That stern plate reads "The Island Skipper — Jersey" and those are two glasses of something cold with the sun going down behind Elizabeth Castle. This is the point of all of it. The right glass makes a difference — not for snobbish reasons, but because a proper wine glass shape affects how the wine tastes and how the evening feels.' },
       { type: 'p', text: 'The catch is that real glass on a boat is a hazard and a liability. The solution is polycarbonate — but not all polycarbonate glasses are equal. The bad ones look like picnic glasses. The good ones are indistinguishable from crystal at arm\'s length.' },
@@ -163,9 +170,10 @@ export const articles = [
     excerpt: 'A complete gear guide for Channel Islands sailing — written by someone who actually does it. From the Race of Alderney to drying out at Grève de Lecq.',
     readTime: '15 min read',
     date: 'March 2026',
+    published: '2026-03-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'People ask what makes sailing around Jersey different. The answer is the tides. Everything here is about the tides. The Channel Islands sit at the confluence of the Atlantic and the English Channel, creating tidal flows that can run at 8 knots in the Race of Alderney. Get the timing wrong and you\'re going backwards. Get it right and you\'re flying.' },
-      { type: 'callout', title: 'The Channel Islands Tidal Reality', text: 'Jersey\'s 12m tidal range is the second largest in the world. This affects everything: where you can anchor, what time you can enter and leave harbours, and what gear you need when the tide does something unexpected.' },
+      { type: 'callout', title: 'The Channel Islands Tidal Reality', text: 'Jersey\'s 12m tidal range is one of the largest in the world. This affects everything: where you can anchor, what time you can enter and leave harbours, and what gear you need when the tide does something unexpected.' },
       { type: 'h2', text: 'The Galley on a Passage' },
       { type: 'p', text: 'For passages of 4–6 hours (St. Helier to Cherbourg, for example), provisioning is straightforward: a good thermos of hot soup, rolls, fruit, and plenty of water. The Wacaco Minipresso is worth its weight in coffee beans for the return leg.' },
       { type: 'product', name: 'Stanley Classic Vacuum Flask 1L', verdict: 'Best passage flask. Keeps hot for 24 hours genuinely — tested at anchor overnight in October. Tough enough to survive the kind of treatment a boat gives things.', price: 'Around £40', link: link('stanley-vacuum-flask') },
@@ -186,6 +194,7 @@ export const articles = [
     excerpt: 'The bilge smell is not inevitable. With the right combination of products and habits, a boat cabin can smell as fresh as a hotel room. Here\'s how.',
     readTime: '9 min read',
     date: 'February 2026',
+    published: '2026-02-01',   // ISO date — used by sitemap + structured data
     body: [
       { type: 'p', text: 'Every sailor knows the smell: the moment you open the hatch after a week away and get hit by that particular combination of diesel, damp, and something faintly biological. It doesn\'t have to be like this. With the right approach, a boat can smell genuinely pleasant.' },
       { type: 'callout', title: 'Why Jersey Boats Get Damp', text: 'The Channel Islands climate is mild but very moist — Atlantic air, frequent sea mist, and the dramatic tidal range all conspire to pump moisture into boat cabins. A boat left closed for a week in Jersey in October will be noticeably damper than the same boat in the Mediterranean.' },

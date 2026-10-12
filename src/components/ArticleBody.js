@@ -1,3 +1,9 @@
+// A product link is only rendered when a real URL has been set in
+// affiliateLinks.js — placeholder '#' links show the product without a button.
+function hasLink(href) {
+  return typeof href === 'string' && href.startsWith('http')
+}
+
 export default function ArticleBody({ body }) {
   return (
     <div className="article-body">
@@ -20,10 +26,12 @@ export default function ArticleBody({ body }) {
           <div key={i} className="product-box">
             <div className="product-name">{block.name}</div>
             <div className="product-verdict">{block.verdict}</div>
-            <div className="product-price">{block.price} · Amazon UK</div>
-            <a className="affiliate-btn" href={block.link} target="_blank" rel="noopener noreferrer nofollow">
-              Check price on Amazon →
-            </a>
+            {block.price && <div className="product-price">Typical price: {block.price}</div>}
+            {hasLink(block.link) && (
+              <a className="affiliate-btn" href={block.link} target="_blank" rel="sponsored noopener noreferrer">
+                Check price on Amazon →
+              </a>
+            )}
           </div>
         )
         return null

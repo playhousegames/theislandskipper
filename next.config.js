@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: { unoptimized: true }
+  // Image optimisation on: Vercel resizes and serves WebP/AVIF instead of full-size JPEGs.
 }
 module.exports = nextConfig
